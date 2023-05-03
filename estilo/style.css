@@ -22,13 +22,15 @@ main {
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translate(-50%, -50%);
      background-color: #ffffff;
      height: 500px;
      width: 300px;
      border-radius: 20px;
      overflow: hidden;
      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
+     transition: height 0.3s, width 0.3s;
+     transition-timing-function: ease;
+     transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -40,4 +42,76 @@ main {
 #acesso {
      display: block;
      padding: 10px;
+     text-align: center;
+}
+
+#acesso > h1 {
+     text-align: center;
+     padding-bottom: 10px;
+}
+
+#acesso > p {
+     font-size: 0.8em;
+}
+
+#campo {
+     background-color: #e79ae7;
+     display: block;
+     width: 100%;
+     height: 40px;
+     border-radius: 10px;
+     margin: 10px 0px;
+}
+
+#campo > label {
+     display: none;
+}
+
+#campo > span {
+     color: #ffffff;
+     font-size: 2em;
+     width: 40px;
+     padding: 4px;
+     border: 0px;
+}
+
+#campo > input {
+     height: 90%;
+     width: calc(100% - 57px);
+     border-radius: 10px;
+     border: none;
+     transform: translateY(-11px);
+}
+
+div > input[type=submit] {
+     display: block;
+     font-size: 1em;
+     width: 100%;
+     height: 40px;
+     margin-top: 10px;
+     background-color: #8989fd;
+     color: #ffffff;
+     border: none;
+     border-radius: 10px;
+}
+
+div > input[type=submit]:hover {
+     background-color: #5757bb;
+     color: #ffffff;
+}
+
+div > a {
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     width: 100%;
+     height: 40px;
+     margin-top: 8px;
+     border-radius: 10px;
+     background-color: #5e5eff;
+     color: #ffffff;
+}
+
+div > a:hover {
+     background-color: #4343ce;
 }

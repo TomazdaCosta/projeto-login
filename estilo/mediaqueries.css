@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*
+
+Pequenas Telas: até 600px
+Smartfone: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+     body {
+          background-image: linear-gradient(to top, #8989fd, #e79ae7);
+     }
+
+     #login {
+          height: 280px;
+          width: 700px;
+     }
+
+     #login > #imagem {
+          float: left;
+          height: 100%;
+          width: 30%;
+     }
+
+     #login > #acesso {
+          float: right;
+          width: 63%;
+     }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+     body {
+          background-image: linear-gradient(to top, #8989fd, #e79ae7);
+     }
+
+     #login {
+          height: 280px;
+          width: 800px;
+     }
+
+     #login > #imagem {
+          float: right;
+          height: 100%;
+          width: 30%;
+     }
+
+     #login > #acesso {
+          float: left;
+          width: 65%;
+     }
+
+     #acesso > p {
+          font-size: 1em;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+
+     body {
+          background-image: linear-gradient(to top, #8989fd, #e79ae7);
+     }
+
+     #login {
+          height: 280px;
+          width: 900px;
+     }
+
+     #login > #imagem {
+          float: right;
+          height: 100%;
+          width: 30%;
+     }
+
+     #login > #acesso {
+          float: left;
+          width: 63%;
+     }
+
+     #acesso > p {
+          font-size: 1em;
+     }
+}
